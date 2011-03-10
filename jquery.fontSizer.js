@@ -1,7 +1,11 @@
 /*
- * fontSizer - font sizing plugin
- * Version 0.1 (10/03/2011) Copyright (c) 2011 @kohe
- * Licensed under the GPL License: http://www.gnu.org/licenses/gpl.txt
+ * fontSizer
+ *
+ * @version    0.1
+ * @author     kohe ( twelveleven@gmail.com )
+ * @copyright  think3 ( http://kohe.posterous.com )
+ * @license    The MIT License
+ *
  * Requires: jQuery v1.3+
  */
 (function($) {
