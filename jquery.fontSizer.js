@@ -3,7 +3,7 @@
  *
  * @version    0.1
  * @author     kohe ( twelveleven@gmail.com )
- * @copyright  think3 ( http://kohe.posterous.com )
+ * @copyright  think3 ( http://colamune.com/blog )
  * @license    The MIT License
  *
  * Requires: jQuery v1.3+
@@ -108,7 +108,6 @@
     function eraseCookie(name) {
       createCookie(name, "", null);
     }
-
     return this;
   };
 })(jQuery);
