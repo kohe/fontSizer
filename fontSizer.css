@@ -1,0 +1,58 @@
+body {
+  font-size: 0.8em;
+}
+
+/* font sizer */
+#fontSizer {
+  background-color:#000;
+  height: 20px;
+  width: 240px;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  padding: 3px;
+  z-index: 9999;
+  -webkit-border-radius:0 0 5px 5px;
+  -moz-border-radius:0 0 5px 5px;
+  border-radius:0 0 5px 5px;
+}
+#fontSizer p {
+  color: #fff;
+  font-size:13px;
+  line-height: 1;
+  display: inline;
+  float: left;
+  margin: 3px 6px 0 3px;
+  white-space: nowrap;
+  width: 125px;
+}
+.fontScaler {
+  float: right;
+  margin-right: 5px;
+}
+.fontScaler a {
+  overflow: hidden;
+  width:24px;
+  height:24px;
+  display: block;
+  float: left;
+  padding: 2px;
+  margin-left: 3px;
+  border: 1px solid black;
+  background: #fff;
+  background-position: center center;
+  background-repeat:no-repeat;
+  text-indent:5000px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+}
+.fontScaler a#fs_increase {
+  background-image: url('images/zoom-in.png');
+}
+.fontScaler a#fs_decrease {
+  background-image: url('images/zoom-out.png');
+}
+.fontScaler a#fs_reset {
+  background-image: url('images/default.png');
+}
