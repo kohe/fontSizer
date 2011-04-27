@@ -1,5 +1,6 @@
 USAGE:
 
+<pre>
 html
 ----
 <link rel="stylesheet" type="text/css" href="fontSizer.css" />
@@ -25,3 +26,4 @@ expire  : 30,       // cookieの期限(日)
 id_increase : 'fs_increase', // 「+」の要素名
 id_decrease : 'fs_decrease', // 「-」の要素名
 id_reset    : 'fs_reset',    // 「リセット」の要素名
+</pre>
