@@ -1,7 +1,7 @@
 /*
  * fontSizer
  *
- * @version    0.1
+ * @version    0.2
  * @author     kohe ( twelveleven@gmail.com )
  * @copyright  think3 ( http://colamune.com/blog )
  * @license    The MIT License
@@ -11,14 +11,14 @@
 (function($) {
   $.fn.fontSizer = function(options) {
     var defaults = {
-      'target'  : 'body',// 対象
-      'type'    : 'em',  // 単位 px || em || %
-      'default' : 0.8,   // 初期値(cssでもtargetに同じ数値を指定した方がキレイ)
-      'step'    : 0.1,   // 目盛り
-      'max'     : 5.0,   // 最大値
-      'min'     : 0.1,   // 最小値
-      'cookie'  : false,  // cookieを有効にするか
-      'expire'  : 30,    // cookieの期限(日)
+      'target': 'body',// 対象
+      'type': 'em',  // 単位 px || em || %
+      'default_value': 0.8,   // 初期値(cssでもtargetに同じ数値を指定した方がキレイ)
+      'step': 0.1,   // 目盛り
+      'max': 5.0,   // 最大値
+      'min': 0.1,   // 最小値
+      'cookie': false,  // cookieを有効にするか
+      'expire': 30,    // cookieの期限(日)
       'id_increase': 'fs_increase',
       'id_decrease': 'fs_decrease',
       'id_reset'   : 'fs_reset',
@@ -26,7 +26,7 @@
     var setting = $.extend(defaults, options);
     var tags = new Array('div','td','tr');
     var cookie_name = 'fontSizer';
-    var Default = setting.default;
+    var Default = setting.default_value;
 
     var fontChange = function(value) {
       if ( ! document.getElementById ) return;
@@ -42,7 +42,7 @@
           createCookie(cookie_name, fontSize, setting.expire);
         }
       } else {
-        fontSize = setting.default;
+        fontSize = setting.default_value;
         if ( setting.cookie == true ) {
           eraseCookie(cookie_name);
         }

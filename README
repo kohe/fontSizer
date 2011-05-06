@@ -11,17 +11,25 @@ $(document).ready(function(){
   $('#fontSizer a').fontSizer({cookie:true});
 });
 </script>
+<div id="fontSizer">
+  <p>文字のサイズの変更</p>
+  <div class="fontScaler">
+    <a href="javascript:void(0)" id="fs_decrease" title="小さくする">-</a>
+    <a href="javascript:void(0)" id="fs_increase" title="大きくする">+</a>
+    <a href="javascript:void(0)" id="fs_reset" title="初期化する">R</a>
+  </div>
+</div>
 
 OPTIONS:
 
-target  : 'body',   // 対象
-type    : 'em',     // 単位( px || em || % )
-default : 0.8,      // 初期値(cssでもtargetに同じ数値を指定した方がキレイ)
-step    : 0.1,      // 目盛り(一回押してどれくらい変化するか)
-max     : 5.0,      // 最大値
-min     : 0.1,      // 最小値
-cookie  : false,    // cookieを有効にするか
-expire  : 30,       // cookieの期限(日)
-id_increase : 'fs_increase', // 「+」の要素名
-id_decrease : 'fs_decrease', // 「-」の要素名
-id_reset    : 'fs_reset',    // 「リセット」の要素名
+target: 'body', // 対象
+type: 'em', // 単位( px || em || % )
+default_value: 0.8, // 初期値(cssでもtargetに同じ数値を指定した方がキレイ)
+step: 0.1, // 目盛り(一回押してどれくらい変化するか)
+max: 5.0, // 最大値
+min: 0.1, // 最小値
+cookie: false, // cookieを有効にするか
+expire: 30, // cookieの期限(日)
+id_increase: 'fs_increase', // 「+」の要素名
+id_decrease: 'fs_decrease', // 「-」の要素名
+id_reset: 'fs_reset', // 「リセット」の要素名
